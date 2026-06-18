@@ -1,0 +1,23 @@
+﻿# Python
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Environment variables / secrets
+.env
+**/.env
+
+# Generated data — large binary/generated files, not source
+vector_db/
+*.faiss
+*.npy
+
+# Node / Next.js frontend
+node_modules/
+.next/
+
+# Misc
+pytest_log.txt
+.pytest_cache/
