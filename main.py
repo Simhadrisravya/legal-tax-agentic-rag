@@ -13,7 +13,13 @@ from query_router import route_query
 from section_search import get_section
 from multi_section_search import get_sections
 
+from fastapi.responses import RedirectResponse
+
 app = FastAPI()
+
+@app.get("/", include_in_schema=False)
+def root():
+    return RedirectResponse(url="/docs")
 
 # =====================================
 # LOAD COMPONENTS
