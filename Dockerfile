@@ -5,6 +5,4 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
 COPY . .
 RUN python save_index.py
-RUN chmod -R 777 /app
-EXPOSE 7860
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8080}"]
