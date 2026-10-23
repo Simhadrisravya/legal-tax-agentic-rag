@@ -5,7 +5,7 @@ Ask questions about the **Income Tax Act** and **GST Act** and get answers groun
 **Live demo:** https://legal-tax-agentic-rag.vercel.app
 (The first request after a quiet period can take up to a minute while the backend wakes up.)
 
-![Screenshot](docs/screenshot.png)
+![Demo Output](docs/demo-output.png)
 
 ## What it does
 - Answers questions on the Income Tax Act, GST Act and GST Rules
